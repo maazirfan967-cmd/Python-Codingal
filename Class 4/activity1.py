@@ -1,33 +1,23 @@
-Temperature=int(input("What is the temperature?"))
-if Temperature < 20:
-    Outfit="Jacket"
-    print("It is cold\nWear a",Outfit)
-else:
-    Outfit="T-Shirt"
-    print("It is warm\nWear a",Outfit)
-is_raining=input("Is it raining?")
-if is_raining=="Yes":
-    print("Bring an umbrella")
-else:
-    print("No need of umbrella")
-Wind_Speed=int(input("What is the wind speed?"))
-if Wind_Speed > 40:
-    Windbreaker="yes"
-    print("It is windy outside\nYou need a windbreaker",Windbreaker)
-else:
-    Windbreaker="No"
-    print("It is calm today\nYou do not need a Windbreaker",Windbreaker)
-Puddles=input("Are there any puddles on the road?")
-if Puddles =="Yes":
-    Shoes="Boots"
-    print("There are puddles on the road\nWear",Shoes)
-else:
-    Shoes="Air Jordans"
-    print("There are no puddles on the road\nWear",Shoes)
-print("Weather Outfit picker--------------------------------")
-print("Temperature",Temperature)
-print("Outfit choosen",Outfit)
-print("Raining",is_raining)
-print("Wind breaker",Windbreaker)
-print("Shoes choosen",Shoes)
-print("-------------------------------------")
+A=95
+B=105
+C=89
+D=110
+E=90
+Total=A + B + C + D + E
+print(Total, "Total mangoes this year")
+Average=Total / 5
+print(Average,"Average this year")
+Earnings=Total * 20
+print(Earnings,"Earnings this year")
+Bags=Total // 25
+Remaining=Total % 25
+print(Bags,"Amount of Bags")
+print(Remaining,"Amount of remaning mangoes")
+Last_year=450
+print("Is total greater than last year?",Total>Last_year)
+print("Is it same than last year?",Total==Last_year)
+print("Is it at least same or greater?",Total>=Last_year)
+Total+=25
+print("Updated Weight",Total)
+Total-=10
+print("Final going to the market",Total)

@@ -1,36 +1,33 @@
-print("====WEEk PLANNER====")
-Day=input("What day is it?").strip().lower()
-Weather=input("How is the weather?/Rainy/Cloudy/Windy/Sunny").strip().lower()
-Homework=input("Did you complete your homework?").strip().lower()
-
-print("Here is your plan for",Day)
-if Day in ("saturday","sunday"):
-    print("Its weekend:Have fun!")
-elif Day=="Monday":
-    print("It is the first day of the week.")
-elif Day=="Friday":
-    print("It is the last day of the week.")
-elif Day in ("tuesday","wednesday","thursday"):
-    print("Boring days:Get through them fast.")
+Temperature=int(input("What is the temperature?"))
+if Temperature < 20:
+    Outfit="Jacket"
+    print("It is cold\nWear a",Outfit)
 else:
-    print("Such days don't exist in our calender.")
-
-if Weather=="rainy" or Weather=="cloudy":
-    print("Carry an umbrella!")
-elif Weather=="sunny" and Homework=="yes":
-    print("Go call your friends!")
-
-if not(Homework=="yes"):
-    print("Complete your homework.")
-
-if Weather=="rainy" and not Homework=="yes":
-    print("It is rainy at the wrong time:You'll sadly have to be inside.")
-elif Weather=="sunny" and Homework=="yes" and not(Day in("saturday","sunday")):
-    print("Not the right day.")
-elif Weather=="sunny" and Day in("saturday","sunday"):
-    print("Finally you can go outside!!!")
+    Outfit="T-Shirt"
+    print("It is warm\nWear a",Outfit)
+is_raining=input("Is it raining?")
+if is_raining=="Yes":
+    print("Bring an umbrella")
 else:
-    print("Let's take 1 step at a time.")
-
-print("==============================================================")
-
+    print("No need of umbrella")
+Wind_Speed=int(input("What is the wind speed?"))
+if Wind_Speed > 40:
+    Windbreaker="yes"
+    print("It is windy outside\nYou need a windbreaker",Windbreaker)
+else:
+    Windbreaker="No"
+    print("It is calm today\nYou do not need a Windbreaker",Windbreaker)
+Puddles=input("Are there any puddles on the road?")
+if Puddles =="Yes":
+    Shoes="Boots"
+    print("There are puddles on the road\nWear",Shoes)
+else:
+    Shoes="Air Jordans"
+    print("There are no puddles on the road\nWear",Shoes)
+print("Weather Outfit picker--------------------------------")
+print("Temperature",Temperature)
+print("Outfit choosen",Outfit)
+print("Raining",is_raining)
+print("Wind breaker",Windbreaker)
+print("Shoes choosen",Shoes)
+print("-------------------------------------")
