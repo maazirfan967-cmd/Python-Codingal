@@ -2,9 +2,9 @@ print("===NUMBER GUESSING GAME===")
 Heart=5
 working=True
 while working:
-    secret=15
+    secret=27
     User_number=int(input("Enter a number between 0 and 50:"))
-    if User_number==15:
+    if User_number==27:
         print("You Won!Nice guessing.")
         break
     else:
